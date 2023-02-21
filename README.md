@@ -1,2 +1,2 @@
 # studiocz.github.io
-StudioCZ Portfilio 
+Studio creative zone
