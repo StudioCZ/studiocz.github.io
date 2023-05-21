@@ -28,7 +28,7 @@ nav ul {
 }
 
 nav li {
-	margin: 0 10px;
+	margin: 10 10px;
 }
 
 nav a {
@@ -63,6 +63,11 @@ h1 {
 	display: flex;
 	margin-bottom: 20px;
 }
+
+.social-media a i {
+	color: #000;
+  }
+  
 
 .social-media a {
 	display: inline-block;
@@ -108,3 +113,4 @@ footer p:last-child {
 		padding: 20px;
 	}
 }
+
