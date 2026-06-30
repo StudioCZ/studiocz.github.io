@@ -4,47 +4,399 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudioCZ — A creative powerhouse crafting bold graphic design, immersive 3D worlds, and captivating animations that push the limits of imagination.">
+  <title>StudioCZ — Creative Design &amp; 3D Studio</title>
+
+  <!-- Clash Display (Fontshare CDN) -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600&display=swap" rel="stylesheet">
+
+  <!-- Inter (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/logos/studiocz_logo_icon_dark.png" type="image/png">
 </head>
 
-<body">
-<script>
-  window.location.href = "repair.html";
-</script>
+<body>
 
-  <div class="container">
-    <div class="Welcome">
-      <img class="logo" src="src/icons/cslogo.png" alt="logo">
-      <div class="navbar">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+  <!-- ══════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════ -->
+  <header class="header" id="top">
+    <div class="header__inner">
+      <a href="#top" class="header__logo">
+        <img src="assets/logos/studiocz_logo_horizontal_light.png" alt="StudioCZ">
+      </a>
 
-      <h1 class="cont_text">CREATIVE ZONE</h1>
-      <p class="cont_text">Welcome to Studio Creative Zone, a freelance design studio specializing in <br>
-        logo design, Photoshop editing, video editing, and 3D modeling. <br> <br>
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-        Our portfolio showcases our innovative and unique designs, tailored to meet our <br>
-        clients' visions and goals. We offer personalized services, ensuring every project exceeds expectations. <br>
-        <b> <i>Let's bring your ideas to life!</i></b></p>
+      <a href="#contact" class="btn btn--primary header__cta">Let's Talk</a>
 
-        <div class="social-links">
-          <a href="#"><img src="src/icons/Behance.svg" alt="Facebook"></a>
-          <a href="#"><img src="src/icons/LinkedIn.svg" alt="Twitter"></a>
-          <a href="#"><img src="src/icons/Twitter.svg" alt="Instagram"></a>
-          <a href="#"><img src="src/icons/Gmail.svg" alt="Instagram"></a>
-          <a href="#"><img src="src/icons/Facebook.svg" alt="Instagram"></a>
+      <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__glow-top" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__pill" data-animate>
+          <span class="hero__pill-dot"></span>
+          Creative Studio — Est. 2024
         </div>
 
+        <h1 class="hero__title" data-animate data-delay="100">
+          World of <em>Boundless</em> Imagination
+        </h1>
+
+        <p class="hero__desc" data-animate data-delay="200">
+          StudioCZ is a creative powerhouse crafting bold graphic design, immersive 3D worlds, and captivating animations that push the limits of imagination.
+        </p>
+
+        <div class="hero__actions" data-animate data-delay="300">
+          <a href="#contact" class="btn btn--primary" id="hero-cta-project">Start a Project</a>
+          <a href="#work" class="btn btn--outline" id="hero-cta-work">View Our Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+      <div class="about__text">
+        <p class="section-label" data-animate>About StudioCZ</p>
+        <h2 class="section-title" data-animate data-delay="100">
+          Where Ideas <em>Become</em> Reality
+        </h2>
+        <p class="about__desc" data-animate data-delay="200">
+          We are a boutique creative studio driven by passion for visual storytelling. From pixel-perfect brand identities to jaw-dropping 3D animations, StudioCZ delivers work that resonates, inspires, and endures. Every project is a new world to build.
+        </p>
+      </div>
+
+      <div class="stats" data-animate data-delay="150">
+        <div class="stats__item">
+          <span class="stats__number">50+</span>
+          <span class="stats__label">Projects Delivered</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">3+</span>
+          <span class="stats__label">Years of Experience</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">20+</span>
+          <span class="stats__label">Happy Clients</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">4</span>
+          <span class="stats__label">Core Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services__header" data-animate>
+        <p class="section-label">What We Do</p>
+        <h2 class="section-title section-title--dark">Our Services</h2>
+        <p class="services__intro">
+          From concept to completion, we bring creative visions to life with precision, artistry, and a relentless pursuit of excellence.
+        </p>
+      </div>
+
+      <div class="services__panel">
+        <article class="service-card" data-animate data-delay="100">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+              <circle cx="10" cy="10" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Bold visuals, print design, posters, editorial layouts, and brand collateral that make a lasting impression.</p>
+        </article>
+
+        <article class="service-card" data-animate data-delay="200">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Brand Identity</h3>
+          <p>Complete brand systems — logos, typography, color palettes, and guidelines that define who you are.</p>
+        </article>
+
+        <article class="service-card" data-animate data-delay="300">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3>3D Modeling</h3>
+          <p>Hyper-realistic 3D models, product visualizations, architectural renders, and abstract art worlds.</p>
+        </article>
+
+        <article class="service-card" data-animate data-delay="400">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="23 7 16 12 23 17 23 7"/>
+              <rect x="1" y="5" width="15" height="14" rx="2"/>
+            </svg>
+          </div>
+          <h3>Motion &amp; Animation</h3>
+          <p>Dynamic motion graphics, 3D animations, and cinematic sequences that captivate audiences.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       WORK
+  ══════════════════════════════════════════ -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="work__header">
+        <p class="section-label" data-animate>Our Work</p>
+        <h2 class="section-title" data-animate data-delay="100">Selected Projects</h2>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="work__filters" data-animate data-delay="150">
+        <button class="filter-btn filter-btn--active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="logo" id="filter-logo">Logo Design</button>
+        <button class="filter-btn" data-filter="thumbnail" id="filter-thumbnail">Thumbnail Design</button>
+        <button class="filter-btn" data-filter="animation" id="filter-animation">Animation</button>
+      </div>
+
+      <!-- Project grid -->
+      <div class="work__grid" id="project-grid">
+
+        <!-- 1. Ambition T-shirt Animation (Top Left) -->
+        <div class="project-card project-card--img" data-animate data-delay="100" data-category="animation" data-modal-type="video" data-modal-id="XEWff0VfqNQ" data-modal-title="Ambition T-shirt Animation" data-modal-tag="Motion &amp; Animation" style="--proj-img: url('https://img.youtube.com/vi/XEWff0VfqNQ/maxresdefault.jpg'); aspect-ratio: 9/16;" tabindex="0" role="button" aria-label="Watch Ambition T-shirt Animation">
+          <div class="project-card__play">&#9654;</div>
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Motion &amp; Animation</span>
+            <h3>Ambition T-shirt Animation</h3>
+            <span class="project-card__cta">Watch Video &#9654;</span>
+          </div>
+        </div>
+
+        <!-- 2. Jersey Animation (Top Right) -->
+        <div class="project-card project-card--img" data-animate data-delay="150" data-category="animation" data-modal-type="video" data-modal-id="vrIU74-RARE" data-modal-title="Jersey Animation" data-modal-tag="Motion &amp; Animation" style="--proj-img: url('https://img.youtube.com/vi/vrIU74-RARE/maxresdefault.jpg'); aspect-ratio: 9/16;" tabindex="0" role="button" aria-label="Watch Jersey Animation">
+          <div class="project-card__play">&#9654;</div>
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Motion &amp; Animation</span>
+            <h3>Jersey Animation</h3>
+            <span class="project-card__cta">Watch Video &#9654;</span>
+          </div>
+        </div>
+
+        <!-- 3. Canada Design Hoodie Animation -->
+        <div class="project-card project-card--img" data-animate data-delay="200" data-category="animation" data-modal-type="video" data-modal-id="6vwTmIEybSQ" data-modal-title="Canada Hoodie Animation" data-modal-tag="Motion &amp; Animation" style="--proj-img: url('https://img.youtube.com/vi/6vwTmIEybSQ/maxresdefault.jpg'); aspect-ratio: 9/16;" tabindex="0" role="button" aria-label="Watch Canada Hoodie Animation">
+          <div class="project-card__play">&#9654;</div>
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Motion &amp; Animation</span>
+            <h3>Canada Hoodie Animation</h3>
+            <span class="project-card__cta">Watch Video &#9654;</span>
+          </div>
+        </div>
+
+        <!-- 4. Champion T-shirt Animation -->
+        <div class="project-card project-card--img" data-animate data-delay="250" data-category="animation" data-modal-type="video" data-modal-id="ubEIxVYzxgo" data-modal-title="Champion T-shirt Animation" data-modal-tag="Motion &amp; Animation" style="--proj-img: url('https://img.youtube.com/vi/ubEIxVYzxgo/maxresdefault.jpg'); aspect-ratio: 9/16;" tabindex="0" role="button" aria-label="Watch Champion T-shirt Animation">
+          <div class="project-card__play">&#9654;</div>
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Motion &amp; Animation</span>
+            <h3>Champion T-shirt Animation</h3>
+            <span class="project-card__cta">Watch Video &#9654;</span>
+          </div>
+        </div>
+
+        <!-- 5. Texas Stars Logo Design (1920×1080 → 16/9) -->
+        <div class="project-card project-card--img" data-animate data-delay="300" data-category="logo" data-modal-type="image" data-modal-src="assets/images/proj-texas-stars.jpg" data-modal-title="Texas Stars Logo Design" data-modal-tag="Brand Identity" style="--proj-img: url('assets/images/proj-texas-stars.jpg'); aspect-ratio: 16/9;" tabindex="0" role="button" aria-label="View Texas Stars Logo Design">
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Brand Identity</span>
+            <h3>Texas Stars Logo Design</h3>
+            <span class="project-card__cta">View Project &#x2197;</span>
+          </div>
+        </div>
+
+        <!-- 6. The Welcome Game (1920×1920 → 16/9 as requested) -->
+        <div class="project-card project-card--img" data-animate data-delay="350" data-category="logo" data-modal-type="image" data-modal-src="assets/images/proj-welcome-game.jpg" data-modal-title="The Welcome Game — Logo Design" data-modal-tag="Brand Identity" style="--proj-img: url('assets/images/proj-welcome-game.jpg'); aspect-ratio: 16/9;" tabindex="0" role="button" aria-label="View The Welcome Game Logo Design">
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Brand Identity</span>
+            <h3>The Welcome Game</h3>
+            <span class="project-card__cta">View Project &#x2197;</span>
+          </div>
+        </div>
+
+        <!-- 7. ILONVIRTA Logo Design (1920×1293 → 3/2) -->
+        <div class="project-card project-card--img" data-animate data-delay="400" data-category="logo" data-modal-type="image" data-modal-src="assets/images/proj-ilonvirta.jpg" data-modal-title="ILONVIRTA Logo Design" data-modal-tag="Logo Design" style="--proj-img: url('assets/images/proj-ilonvirta.jpg'); aspect-ratio: 3/2;" tabindex="0" role="button" aria-label="View ILONVIRTA Logo Design">
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Logo Design</span>
+            <h3>ILONVIRTA Logo Design</h3>
+            <span class="project-card__cta">View Project &#x2197;</span>
+          </div>
+        </div>
+
+        <!-- 8. Vintage Style Thumbnail (1280×720 → 16/9) -->
+        <div class="project-card project-card--img" data-animate data-delay="450" data-category="thumbnail" data-modal-type="image" data-modal-src="assets/images/proj-vintage-thumbnail.jpg" data-modal-title="Vintage Style Thumbnail Design" data-modal-tag="Graphic Design" style="--proj-img: url('assets/images/proj-vintage-thumbnail.jpg'); aspect-ratio: 16/9;" tabindex="0" role="button" aria-label="View Vintage Style Thumbnail Design">
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Graphic Design</span>
+            <h3>Vintage Style Thumbnail</h3>
+            <span class="project-card__cta">View Design &#x2197;</span>
+          </div>
+        </div>
+
+        <!-- 9. Shark T-shirt Animation (At the bottom) -->
+        <div class="project-card project-card--img" data-animate data-delay="500" data-category="animation" data-modal-type="video" data-modal-id="hCYZI9KLgfo" data-modal-title="Shark T-shirt Animation" data-modal-tag="Motion &amp; Animation" style="--proj-img: url('https://img.youtube.com/vi/hCYZI9KLgfo/maxresdefault.jpg'); aspect-ratio: 9/16;" tabindex="0" role="button" aria-label="Watch Shark T-shirt Animation">
+          <div class="project-card__play">&#9654;</div>
+          <div class="project-card__overlay">
+            <span class="project-card__tag">Motion &amp; Animation</span>
+            <h3>Shark T-shirt Animation</h3>
+            <span class="project-card__cta">Watch Video &#9654;</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact__glow" aria-hidden="true"></div>
+    <div class="container contact__inner">
+      <p class="section-label" data-animate>Get in Touch</p>
+      <h2 class="section-title section-title--dark" data-animate data-delay="100">
+        Let's Build Something<br>Extraordinary
+      </h2>
+      <p class="contact__desc" data-animate data-delay="200">
+        Have a project in mind? We'd love to hear from you. Let's collaborate and turn your creative vision into reality.
+      </p>
+
+      <a href="mailto:studiocreativezone@gmail.com" class="btn btn--primary btn--email" data-animate data-delay="250" id="contact-email-btn">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        studiocreativezone@gmail.com
+      </a>
+
+      <div class="contact__social" data-animate data-delay="300">
+        <a href="https://www.instagram.com/studiocreativezone" target="_blank" rel="noopener noreferrer" id="social-instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+          Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/studiocreativezone" target="_blank" rel="noopener noreferrer" id="social-linkedin">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <p class="contact__hire-label" data-animate data-delay="350">Hire Me On</p>
+      <div class="contact__platforms" data-animate data-delay="400">
+        <a href="https://www.fiverr.com/malith5rr" class="platform-btn" target="_blank" rel="noopener noreferrer" id="platform-fiverr">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+          Fiverr
+        </a>
+        <a href="https://www.upwork.com/freelancers/~01" class="platform-btn" target="_blank" rel="noopener noreferrer" id="platform-upwork">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+          Upwork
+        </a>
+        <a href="https://www.freelancer.com/u/studiocreativezone" class="platform-btn" target="_blank" rel="noopener noreferrer" id="platform-freelancer">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+          Freelancer
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#top" class="footer__logo">
+        <img src="assets/logos/studiocz_logo_horizontal_light.png" alt="StudioCZ">
+      </a>
+      <p class="footer__copy">&copy; 2025 StudioCZ. World of Boundless Imagination.</p>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       PROJECT MODAL
+  ══════════════════════════════════════════ -->
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" id="modal-backdrop"></div>
+    <div class="modal__container">
+      <button class="modal__close" id="modal-close" aria-label="Close project">&times;</button>
+      <div class="modal__header">
+        <span class="modal__tag" id="modal-tag"></span>
+        <p class="modal__title" id="modal-title"></p>
+      </div>
+      <div class="modal__body" id="modal-body">
+        <!-- Filled dynamically: <img> for images, <iframe> for videos -->
+      </div>
     </div>
   </div>
 
-
-  </body>
+  <script src="script.js"></script>
+</body>
 
 </html>
