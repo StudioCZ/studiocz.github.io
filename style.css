@@ -1011,13 +1011,68 @@ em {
   border-radius: var(--radius);
 }
 
-/* Video iframe body */
-.modal__body iframe {
+/* Video player — crop + mask to hide YouTube Shorts chrome */
+.modal__video-wrap {
+  position: relative;
   width: 100%;
   aspect-ratio: 9 / 16;
-  border: none;
-  display: block;
+  overflow: hidden;
   border-radius: var(--radius);
+  background: #000;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+  isolation: isolate;
+}
+
+.modal__video-wrap iframe {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 108%;
+  height: 130%;
+  transform: translateX(-50%) translateY(-9%);
+  border: none;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+/* Visual mask + click shield — blocks YouTube channel/share buttons */
+.modal__video-shield {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  pointer-events: auto;
+  cursor: default;
+}
+
+.modal__video-shield--top {
+  top: 0;
+  height: clamp(62px, 13.5%, 78px);
+  background: linear-gradient(
+    to bottom,
+    #000 0,
+    #000 calc(100% - 16px),
+    transparent 100%
+  );
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.modal__video-shield--bottom {
+  bottom: 0;
+  height: clamp(36px, 7.5%, 44px);
+  background: linear-gradient(
+    to top,
+    #000 0,
+    #000 calc(100% - 12px),
+    transparent 100%
+  );
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.modal__container--video .modal__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Prevent scroll when modal open */
