@@ -95,7 +95,8 @@
       var videoId = card.getAttribute('data-modal-id');
       var iframe  = document.createElement('iframe');
       iframe.src  = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0&modestbranding=1';
-      iframe.allow           = 'autoplay; encrypted-media; picture-in-picture';
+      iframe.allow           = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.referrerPolicy  = 'strict-origin-when-cross-origin';
       iframe.allowFullscreen = true;
       iframe.title           = title;
       modalBody.appendChild(iframe);
