@@ -144,6 +144,7 @@ em {
 [data-animate][data-delay="400"] { transition-delay: 0.4s; }
 [data-animate][data-delay="450"] { transition-delay: 0.45s; }
 [data-animate][data-delay="500"] { transition-delay: 0.5s; }
+[data-animate][data-delay="550"] { transition-delay: 0.55s; }
 
 /* ══════════════════════════════════════════════════════
    TYPOGRAPHY
